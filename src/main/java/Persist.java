@@ -17,10 +17,8 @@ public class Persist {
     public static int persistence (long num) {
         int numRepeticiones = 0;
         while(num > 9){ //Un solo dígito
-            while(num > 9){
-                num = producto(num);
-                numRepeticiones++;
-            }
+            num = producto(num);
+            numRepeticiones++;
         }
         return numRepeticiones;
     }
